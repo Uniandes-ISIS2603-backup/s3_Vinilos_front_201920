@@ -1,0 +1,23 @@
+[{
+    "id": 1,
+    "name": "21st Century Breakdown",
+    "anio": 2009,
+    "coleccion": "Green Day's Best hits",
+    "precio": 30,
+    "informacion": "Es el octavo álbum de estudio de la banda estadounidense de punk Green Day. Se trata de la segunda ópera rock del grupo, siendo el anterior American Idiot y es el primero producido por Butch Vig.",
+    "estado": "nuevo",
+    "disponible": true,
+    "duenio": "codiscos",
+    "imagen": "https://m.media-amazon.com/images/I/81dmRIIv-dL._SS500_.jpg"
+  }, {
+    "id": 2,
+    "name": "American Idiot",
+    "anio": 2004,
+    "coleccion": "Green Day's Best hits",
+    "precio": 45,
+    "informacion": "Es el séptimo álbum de estudio de la banda estadounidense de pop punk Green Day. El álbum fue producido por Rob Cavallo y fue lanzado al mercado el 21 de septiembre de 2004 por el sello Reprise Records.",
+    "estado": "nuevo",
+    "disponible": true,
+    "duenio": "codiscos",
+    "imagen": "https://images-na.ssl-images-amazon.com/images/I/61HZsw4F5VL._SX425_.jpg"
+  }]
