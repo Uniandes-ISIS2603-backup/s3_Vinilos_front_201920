@@ -10,43 +10,7 @@ export interface Vinilo {
   name: string;
 
   /**
-  * El año del vinilo
-  */
-  anio: number;
-
-  /**
-  * La colecccion del vinilo
-  */
-  coleccion: string;
-
-  /**
-  * El precio del vinilo
-  */
-  precio: number;
-
-  /**
-  * La informacion del vinilo
-  */
-  informacion: string;
-
-  /**
-  * El estado del vinilo
-  */
-  estado: string;
-
-  /**
-  * La disponibilidad del vinilo
-  */
-  disponible: boolean;
-
-  /**
-  * El dueño del vinilo
-  */
-  //Por ahora le puse any, pero cuando se conecte es de tipo Usuario
-  duenio: any;
-
-  /**
-   * El path con la imagen del vinilo
+   * El path de la imagen del vinilo
    */
   imagen: string;
 }

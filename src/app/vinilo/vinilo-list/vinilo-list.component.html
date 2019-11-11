@@ -1,15 +1,13 @@
-  <div class="container-fluid">
+  
     <div class="col-md-2">
         <table class="table table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th>Vinilo Name</th>    
-                </tr>
-            </thead>
             <tbody>
-                <tr *ngFor = "let e of vinilos">
-                    <td>{{e.name}}</td>
-                  
+                <tr *ngFor = "let vinilo of vinilos">
+                  <td style="cursor: pointer;">
+                    <a class="figure-caption" routerLink="/vinilos/{{vinilo.id}}">
+                    <p align="center"><img src="{{vinilo.imagen}}" style="width: 150px; height: 150px"></p>
+                    <h3 align="center" style="color: #5dc1b9">{{vinilo.name}}</h3>
+                    </a>
                 </tr>
             </tbody>
         </table>

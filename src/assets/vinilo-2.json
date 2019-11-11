@@ -1,0 +1,13 @@
+{
+    "id": 2,
+    "name": "American Idiot",
+    "anio": 2004,
+    "artista": "Green Day",
+    "coleccion": "Green Day's Best hits",
+    "precio": 45,
+    "descripcion": "Es el séptimo álbum de estudio de la banda estadounidense de pop punk Green Day. El álbum fue producido por Rob Cavallo y fue lanzado al mercado el 21 de septiembre de 2004 por el sello Reprise Records.",
+    "estado": "Nuevo",
+    "disponible": true,
+    "duenio": "codiscos",
+    "imagen": "https://images-na.ssl-images-amazon.com/images/I/61HZsw4F5VL._SX425_.jpg"
+  }

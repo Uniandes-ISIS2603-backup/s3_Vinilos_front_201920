@@ -38,7 +38,8 @@ import { ViniloModule } from './vinilo/vinilo.module';
         }),
         NgxPaginationModule,
         NgxPermissionsModule.forRoot(),
-        NgbModule
+        NgbModule,
+        ViniloModule
     ],
     bootstrap: [AppComponent],
     providers: [

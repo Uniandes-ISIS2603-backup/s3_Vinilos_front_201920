@@ -1,0 +1,13 @@
+{
+    "id": 4,
+    "name": "Cleopatra",
+    "anio": 2016,
+    "artista": "The Lumineers",
+    "coleccion": "The Lumineers' Best hits",
+    "precio": 35,
+    "descripcion": "Es el segundo álbum de estudio de la banda de rock estadounidense The Lumineers. El álbum fue lanzado en los Estados Unidos el 8 de abril de 2016, y contiene los singles Ophelia y Angela. El álbum ha tenido éxito comercial, debutando en número 1 en el UK Albums Chart.",
+    "estado": "Nuevo",
+    "disponible": true,
+    "duenio": "codiscos",
+    "imagen": "https://images-na.ssl-images-amazon.com/images/I/A18mpobgSRL._SX522_.jpg"
+  }
