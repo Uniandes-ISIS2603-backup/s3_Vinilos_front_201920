@@ -11,7 +11,7 @@ import { ViniloDetailComponent } from './vinilo-detail/vinilo-detail.component';
     CommonModule,
     AppRoutingModule
   ],
-  declarations: [ViniloListComponent, ViniloDetailComponent],
+declarations: [ViniloListComponent, ViniloDetailComponent],
   exports: [ViniloListComponent],
   providers: [ViniloService]
 })

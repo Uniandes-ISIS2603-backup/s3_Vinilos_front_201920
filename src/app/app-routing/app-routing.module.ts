@@ -42,6 +42,10 @@ const routes: Routes = [
         path: 'home',
         component: AuthLoginComponent
     },
+    /**{
+        path: '**',
+        redirectTo: 'home',
+    },*/
     {
         path: 'vinilos',
         children: [{
