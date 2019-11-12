@@ -18,4 +18,8 @@ export class PedidoService {
   getPedidos(): Observable<Pedido []>{
     return this.httpClient.get<Pedido[]>(API_URL);
   }
+
+  getPedido(id:number): Observable<Pedido>{
+    return this.httpClient.get<Pedido>(`${{API_URL}}/${{id}}`);
+  }
 }

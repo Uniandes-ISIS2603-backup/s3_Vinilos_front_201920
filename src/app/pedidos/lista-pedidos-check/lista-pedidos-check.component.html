@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div *ngFor="let pedido of pedidos" class="card col-5 offset-1 border-check mt-4">
+    <a routerLink="detail/{{pedido.id}}" *ngFor="let pedido of pedidos" class="card col-5 offset-1 border-check mt-4">
       <div class="card-body row">
         <div class="col-5 card card-interno text-center m-0">
           <h6 class="card-title titulo-pedido">Numero Pedido:{{pedido.id}}</h6>
@@ -28,9 +28,10 @@
                 <p class="m-0">Metodo de pago:<br />{{pedido.metodoPago.pago}}</p>
               </div>
             </div>
+           
         </div>
 
       </div>
-    </div>
+    </a>
   </div>
 </div>

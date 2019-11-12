@@ -7,11 +7,12 @@ import { ListaPedidosRejectedComponent } from './lista-pedidos-rejected/lista-pe
 import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from '../shared/header/header.component';
 import { VistaComponent } from './vista/vista.component';
+import { PedidosDetailComponent } from './pedidos-detail/pedidos-detail.component';
 
 
 
 @NgModule({
-  declarations: [ListaPedidosCheckComponent, ListaPedidosRejectedComponent, NavComponent,HeaderComponent, VistaComponent],
+  declarations: [ListaPedidosCheckComponent, ListaPedidosRejectedComponent, NavComponent,HeaderComponent, VistaComponent, PedidosDetailComponent],
   imports: [
     CommonModule,
     PedidosRoutingModule
