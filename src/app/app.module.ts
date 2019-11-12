@@ -15,13 +15,19 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import {AuthModule} from './auth/auth.module';
 
 import { ViniloModule } from './vinilo/vinilo.module';
+import { PedidosModule } from './pedidos/pedidos.module';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        HomeComponent,
+        PageNotFoundComponent
+    
     ],
     imports: [
         BrowserModule,
@@ -39,7 +45,8 @@ import { ViniloModule } from './vinilo/vinilo.module';
         NgxPaginationModule,
         NgxPermissionsModule.forRoot(),
         NgbModule,
-        ViniloModule
+        ViniloModule,
+        PedidosModule
     ],
     bootstrap: [AppComponent],
     providers: [

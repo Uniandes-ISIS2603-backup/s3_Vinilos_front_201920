@@ -1,0 +1,24 @@
+[
+  {
+    "numPedido": 10292,
+    "numEnvio": 124,
+    "fechaEnvio": "2/12/2019",
+    "metodoPago": "Tarjeta",
+    "enviado": true,
+    "aceptado": true,
+    "observacion": "No se observo nada raro",
+    "tipopedido": "compra",
+    "fechageneracion": "10/10/2018"
+  },
+  {
+    "numPedido": 10293,
+    "numEnvio": -1,
+    "fechaEnvio": "null",
+    "metodoPago": "Tarjeta",
+    "enviado": false,
+    "aceptado": false,
+    "observacion": " se observo algo raro",
+    "tipopedido": "venta",
+    "fechageneracion": "01/10/2018"
+  }
+]

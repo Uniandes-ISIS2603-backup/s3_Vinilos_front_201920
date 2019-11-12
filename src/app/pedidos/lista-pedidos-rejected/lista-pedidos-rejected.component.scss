@@ -1,0 +1,21 @@
+$rosa:#fa8072;
+.image-reject{
+  //display: block;
+  width: 20 px;
+  text-align: center;
+}
+.border-reject{
+  border: 3px solid $rosa ;
+  border-radius: 15px;
+
+}
+.card-interno{
+  border: none;
+}
+.badge-color{
+  background-color: $rosa;
+  color: white
+}
+.titulo-pedido{
+  color: $rosa;
+}
