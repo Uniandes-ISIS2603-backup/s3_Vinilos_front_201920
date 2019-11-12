@@ -10,7 +10,7 @@ import { ViniloDetailComponent } from '../vinilo/vinilo-detail/vinilo-detail.com
 import { ViniloListComponent } from '../vinilo/vinilo-list/vinilo-list.component';
 import { HomeComponent } from 'app/home/home.component';
 import { PageNotFoundComponent } from 'app/page-not-found/page-not-found.component';
-import {ArtistaListComponent} from '../artistas/artista-list/artista-list.component';
+import { ArtistaListComponent } from "../artistas/artista-list/artista-list.Component";
 import {ArtistaDetailComponent} from '../artistas/artista-detail/artista-detail.component';
 
 const routes: Routes = [
@@ -61,12 +61,7 @@ const routes: Routes = [
         ]
     },
     {
-        path: 'pedidos',
-        loadChildren: () => import('../pedidos/pedidos.module').then(m => m.PedidosModule)
-
-    },
-    {
-        path: 'artistas',
+        path: 'artista',
         children: [{
             path: 'list',
             component: ArtistaListComponent
@@ -76,7 +71,13 @@ const routes: Routes = [
             component: ArtistaDetailComponent
         }
         ]
+    },
+    {
+        path: 'pedidos',
+        loadChildren: () => import('../pedidos/pedidos.module').then(m => m.PedidosModule)
+
     }
+   
 ];
 @NgModule({
         imports: [

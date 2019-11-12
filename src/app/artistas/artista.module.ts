@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import {AppRoutingModule} from '../app-routing/app-routing.module';
 import { CommonModule } from '@angular/common';
 import { ArtistaService } from './artista.service';
-import { ArtistaListComponent } from './artista-list/artista-list.component';
+import { ArtistaListComponent } from "./artista-list/artista-list.Component";
 import { ArtistaDetailComponent } from './artista-detail/artista-detail.component';
 
 @NgModule({
