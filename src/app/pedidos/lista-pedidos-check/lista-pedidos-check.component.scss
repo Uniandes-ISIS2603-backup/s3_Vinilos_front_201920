@@ -1,0 +1,21 @@
+ $aguamarina:#5dc1b9;
+.image-check{
+  //display: block;
+  width: 20 px;
+  text-align: center;
+}
+.border-check{
+  border: 3px solid $aguamarina ;
+  border-radius: 15px;
+
+}
+.card-interno{
+  border: none;
+}
+.badge-color{
+  background-color: $aguamarina;
+  color: white
+}
+.titulo-pedido{
+  color: $aguamarina;
+}

@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Pedidos </div>
+        <div class="list-group list-group-flush">
+            <a routerLink="aceptados" routerLinkActive="active"  class="list-group-item list-group-item-action  selected-check">Aceptados</a>
+            <a routerLink="rechazados" routerLinkActive="active"  class="list-group-item list-group-item-action selected-reject">Rechazados</a>
+        </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper
+
+<router-outlet></router-outlet>
+ -->
