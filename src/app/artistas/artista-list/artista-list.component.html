@@ -1,0 +1,12 @@
+
+<div class="container">
+	<div class="row">  
+    
+		<div class="card" style="width: 15rem;" *ngFor="let artista of artista">
+			<img src={{artista.image}} class="card-img-top" alt="..." [routerLink] ="['/artistas', { outlets: { 'detail': [artista.id] } }]">
+			<div class="card-body">
+				<h5 class="card-title" style="color: #5dc1b9" [routerLink] ="['/artistas', { outlets: { 'detail': [artista.id] } }]">{{artista.name}}</h5>
+			</div>
+		</div>
+	</div>
+</div>

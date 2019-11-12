@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Green Day",
+    "image": "https://i.pinimg.com/originals/88/03/d7/8803d7ec675006ca7c23d244b7ff0104.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Queen",
+    "image": "https://ae01.alicdn.com/kf/HTB1ru46l8jTBKNjSZFuq6z0HFXae.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Imagine Dragons",
+    "image": "https://i.pinimg.com/originals/65/d2/74/65d2742c92db91610eddea591e85723d.jpg"
+  
+  },
+  {
+    "id": 4,
+    "name": "Twenty One Pilots",
+    "image": "https://cdn131.picsart.com/270840278017201.jpg?r1024x1024"
+  }
+]

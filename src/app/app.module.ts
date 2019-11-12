@@ -18,6 +18,7 @@ import { ViniloModule } from './vinilo/vinilo.module';
 import { PedidosModule } from './pedidos/pedidos.module';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ArtistaModule } from "./artistas/artista.module";
 
 
 
@@ -46,7 +47,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
         NgxPermissionsModule.forRoot(),
         NgbModule,
         ViniloModule,
-        PedidosModule
+        PedidosModule,
+        ArtistaModule
     ],
     bootstrap: [AppComponent],
     providers: [
