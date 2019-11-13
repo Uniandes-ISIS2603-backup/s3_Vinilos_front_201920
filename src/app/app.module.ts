@@ -19,6 +19,8 @@ import { PedidosModule } from './pedidos/pedidos.module';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ArtistaModule } from "./artistas/artista.module";
+import { GeneroModule } from "./genero/genero.module";
+import { EnvioModule } from "./envio/envio.module";
 
 
 
@@ -48,7 +50,9 @@ import { ArtistaModule } from "./artistas/artista.module";
         NgbModule,
         ViniloModule,
         PedidosModule,
-        ArtistaModule
+        ArtistaModule,
+        GeneroModule,
+        EnvioModule
     ],
     bootstrap: [AppComponent],
     providers: [
