@@ -18,3 +18,34 @@
     </div>
   </div>
 </div>
+<br>
+<br>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-5"  ></div>
+      <h1 style="color: #5dc1b9;">Musica del artista</h1>
+      <div class="col-5"></div>
+  </div>
+</div>
+</body>
+<br>
+
+<div class="container">
+	<div class="row">  
+    
+		<div class="card" style="width: 15rem;" *ngFor="let vinilo of artistaDetail.vinilos">
+			<img src={{vinilo.image}} class="card-img-top" routerLink="/vinilos/{{vinilo.id}}" >
+			<div class="card-body">
+				<h5 class="card-title" style="color: #5dc1b9" routerLink="/vinilos/{{vinilo.id}}" >{{vinilo.name}}</h5>
+			</div>
+		</div>
+	</div>
+</div>
+
