@@ -15,6 +15,7 @@ import { ArtistaListComponent } from "../artistas/artista-list/artista-list.Comp
 import {ArtistaDetailComponent} from '../artistas/artista-detail/artista-detail.component';
 import { EnvioDetailComponent } from '../envio/envio-detail/envio-detail.component';
 import { EnvioListComponent } from '../envio/envio-list/envio-list.component';
+import { FavoritosListComponent } from '../vinilosFavoritos/favoritos-list/favoritos-list.component';
 
 const routes: Routes = [
 
@@ -87,6 +88,14 @@ const routes: Routes = [
             component:GeneroListComponent
         }]
     },
+    {
+        path:'vinilosFavoritos',
+        children: [{
+            path:'list',
+            component:GeneroListComponent
+        }]
+    },
+  
     {
         path:'envio',
         children: [{

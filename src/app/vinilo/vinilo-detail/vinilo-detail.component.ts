@@ -4,6 +4,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { ViniloService } from '../vinilo.service';
 import { Vinilo } from '../vinilo';
 import { ViniloDetail } from '../vinilo-detail';
+import { stringify } from 'querystring';
 
 @Component({
   selector: 'app-vinilo-detail',
@@ -32,6 +33,8 @@ export class ViniloDetailComponent implements OnInit {
    *La lista de vinilos que pertenecen a la tienda
    */
   vinilos: Vinilo[] = [];
+
+  vinilo: Vinilo;
 
   getVinilos(): void {
         this.viniloService.getVinilos().subscribe(vinilos => this.vinilos = vinilos);
@@ -73,6 +76,13 @@ export class ViniloDetailComponent implements OnInit {
 
   ngOnDestroy() {
     this.loader.unsubscribe();
+  }
+
+  agregar()
+  {
+   var obj = {name : this.vinilo.name, image : this.vinilo.imagen};
+   localStorage.seetItem('artista2', JSON.stringify(obj) );
+
   }
 
 }
