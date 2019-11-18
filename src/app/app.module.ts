@@ -21,7 +21,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ArtistaModule } from "./artistas/artista.module";
 import { GeneroModule } from "./genero/genero.module";
 import { EnvioModule } from "./envio/envio.module";
-
+import { VinilosFavoritosModule } from "./vinilosFavoritos/vinilosFavoritos.module";
 
 
 
@@ -52,7 +52,8 @@ import { EnvioModule } from "./envio/envio.module";
         PedidosModule,
         ArtistaModule,
         GeneroModule,
-        EnvioModule
+        EnvioModule,
+        VinilosFavoritosModule
     ],
     bootstrap: [AppComponent],
     providers: [

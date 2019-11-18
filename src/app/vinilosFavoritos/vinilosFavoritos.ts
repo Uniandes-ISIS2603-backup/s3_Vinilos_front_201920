@@ -12,5 +12,5 @@ export interface VinilosFavoritos {
     /**
      * El path de la imagen del vinilo
      */
-    imagen: string;
+    image: string;
   }

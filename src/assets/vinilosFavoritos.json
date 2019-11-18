@@ -1,0 +1,12 @@
+[{
+    "id": 1,
+    "name": "21st Century Breakdown",
+    "image": "https://m.media-amazon.com/images/I/81dmRIIv-dL._SS500_.jpg",
+    "precio": 30 
+  }, {
+    "id": 2,
+    "name": "American Idiot",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61HZsw4F5VL._SX425_.jpg",
+    "precio": 45
+  }
+  ]
