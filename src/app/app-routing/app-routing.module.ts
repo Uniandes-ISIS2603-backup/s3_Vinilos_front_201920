@@ -6,6 +6,7 @@ import { NgxPermissionsGuard } from 'ngx-permissions';
 import { AuthLoginComponent } from '../auth/auth-login/auth-login.component';
 import { AuthSignUpComponent } from '../auth/auth-sign-up/auth-sign-up.component';
 
+import { UsuarioDetailComponent } from '../usuarios/usuario-detail/usuario-detail.component';
 import { ViniloDetailComponent } from '../vinilo/vinilo-detail/vinilo-detail.component';
 import { ViniloListComponent } from '../vinilo/vinilo-list/vinilo-list.component';
 import { GeneroListComponent } from '../genero/genero-list/genero-list.component';
@@ -16,6 +17,7 @@ import {ArtistaDetailComponent} from '../artistas/artista-detail/artista-detail.
 import { EnvioDetailComponent } from '../envio/envio-detail/envio-detail.component';
 import { EnvioListComponent } from '../envio/envio-list/envio-list.component';
 import { FavoritosListComponent } from '../vinilosFavoritos/favoritos-list/favoritos-list.component';
+import { Usuario } from 'app/usuarios/usuario';
 
 const routes: Routes = [
 
@@ -106,6 +108,15 @@ const routes: Routes = [
             path: ':id',
             component: EnvioDetailComponent
           }]
+    },
+
+    {
+        path:'usuario',
+        children: [{
+            path:':id',
+            component:UsuarioDetailComponent
+        }]
+
     }
    
 ];

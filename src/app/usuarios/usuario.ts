@@ -6,8 +6,12 @@ export class Usuario{
     id: number;
 
     /**
-    *nombre del usuario
+    *correo del usuario
     */
-    nombre: String;
-    
+    "correo": string;
+
+    /**
+     * contrasena del usuario
+     */
+    "contrasena": string;
 }

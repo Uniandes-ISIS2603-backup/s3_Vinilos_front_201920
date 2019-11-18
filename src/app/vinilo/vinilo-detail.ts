@@ -7,11 +7,6 @@ export class ViniloDetail {
   anio: number;
 
   /**
-   * El artista del vinilo
-   */
-  artista: string;
-
-  /**
   * La colecccion del vinilo
   */
   coleccion: string;
