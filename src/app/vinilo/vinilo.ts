@@ -7,7 +7,7 @@ export interface Vinilo {
   /**
   * El nombre del vinilo
   */
-  name: string;
+  nombre: string;
 
   /**
    * El path de la imagen del vinilo

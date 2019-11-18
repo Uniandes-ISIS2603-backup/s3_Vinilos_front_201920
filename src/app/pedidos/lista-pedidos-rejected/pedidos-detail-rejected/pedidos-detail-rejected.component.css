@@ -1,0 +1,24 @@
+li {
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #fa8072;
+    border-color: #fa8072;
+}
+.border-detail{
+
+    border: 2px solid #fa8072 !important;
+    padding: 0%;
+    border-radius: 10px;
+}
+ul{
+    padding: 0%;
+}
