@@ -2,7 +2,7 @@
     <div class="col mt-5 ml-5" *ngFor = "let vinilo of vinilos">
       <div class="card" style="width: 18rem;">
         <a routerLink="/vinilos/{{vinilo.id}}">
-        <img class="card-img-top" src="{{vinilo.imagen}}" alt="Card image cap">
+        <img class="card-img-top" src="{{vinilo.imagen}}">
         </a>
         <div class="card-body">
           <h5 class="card-title">{{vinilo.name}}</h5>
