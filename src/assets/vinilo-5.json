@@ -1,6 +1,6 @@
 {
     "id": 5,
-    "name": "AM",
+    "nombre": "AM",
     "anio": 2013,
     "artista": "Artic Monkeys",
     "coleccion": "Artic Monkeys' Best hits",
@@ -10,4 +10,4 @@
     "disponible": true,
     "duenio": "codiscos",
     "imagen": "https://images-na.ssl-images-amazon.com/images/I/71-Y-3usHkL._SX522_.jpg"
-  }
+}

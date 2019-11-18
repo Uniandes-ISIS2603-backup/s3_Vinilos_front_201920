@@ -80,7 +80,7 @@ export class ViniloDetailComponent implements OnInit {
 
   agregar()
   {
-   var obj = {name : this.vinilo.name, image : this.vinilo.imagen};
+   var obj = {name : this.vinilo.nombre, image : this.vinilo.imagen};
    localStorage.seetItem('artista2', JSON.stringify(obj) );
 
   }

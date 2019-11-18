@@ -1,0 +1,13 @@
+{
+    "id": 6,
+    "nombre": "The 2nd Law",
+    "anio": 2012,
+    "artista": "Muse",
+    "coleccion": "Muse's Best hits",
+    "precio": 100,
+    "descripcion": "Es el nombre del sexto disco de la banda británica Muse, después de The Resistance, lanzado al mercado en los comienzos del mes de octubre de 2012. Es el primer álbum en el que Chris Wolstenholme es la voz principal en dos canciones.",
+    "estado": "Nuevo",
+    "disponible": true,
+    "duenio": "codiscos",
+    "imagen": "https://images-na.ssl-images-amazon.com/images/I/516CecjrR1L._SY498_BO1,204,203,200_.jpg"
+}

@@ -1,7 +1,7 @@
 <div class="row border mt-5 ml-5 mr-5" style="max-width: 950px;">
   <div class="col">
     <div class="row m-2">
-      <h3 style="color: black; white-space: nowrap;">{{viniloDetail.name}}</h3>
+      <h3 style="color: black; white-space: nowrap;">{{viniloDetail.nombre}}</h3>
     </div>
     <div class="row">
       <img src="{{viniloDetail.imagen}}"
@@ -39,7 +39,7 @@
       <a class="figure-caption" routerLink="/vinilos/{{vinilo.id}}">
         <img class="card-img-top" src="{{vinilo.imagen}}" style="cursor: pointer;"></a>
       <div class="card-body">
-        <h5 class="card-title">{{vinilo.name}}</h5>
+        <h5 class="card-title">{{vinilo.nombre}}</h5>
         <p class="card-subtitle mb-2 text-muted">{{vinilo.artista}}</p>
         <p class="card-text"><small class="text-muted">${{vinilo.precio}}</small></p>
       </div>
