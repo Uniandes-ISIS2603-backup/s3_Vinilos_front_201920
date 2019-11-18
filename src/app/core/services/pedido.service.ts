@@ -20,6 +20,10 @@ export class PedidoService {
   }
 
   getPedido(id:number): Observable<Pedido>{
-    return this.httpClient.get<Pedido>(`${{API_URL}}/${{id}}`);
+    return this.httpClient.get<Pedido>(`${API_URL}/${id}`);
+  }
+
+  deletePedido(id:number){
+   return this.httpClient.delete(`${API_URL}/${id}`)
   }
 }
