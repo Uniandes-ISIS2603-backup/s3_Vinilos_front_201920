@@ -1,14 +1,14 @@
-  
-    <div class="col-md-2">
-        <table class="table table-striped">
-            <tbody>
-                <tr *ngFor = "let vinilo of vinilos">
-                  <td style="cursor: pointer;">
-                    <a class="figure-caption" routerLink="/vinilos/{{vinilo.id}}">
-                    <p align="center"><img src="{{vinilo.imagen}}" style="width: 150px; height: 150px"></p>
-                    <h3 align="center" style="color: #5dc1b9">{{vinilo.name}}</h3>
-                    </a>
-                </tr>
-            </tbody>
-        </table>
+<div class="row">
+    <div class="col mt-5 ml-5" *ngFor = "let vinilo of vinilos">
+      <div class="card" style="width: 18rem;">
+        <a routerLink="/vinilos/{{vinilo.id}}">
+        <img class="card-img-top" src="{{vinilo.imagen}}">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">{{vinilo.name}}</h5>
+          <p class="card-subtitle mb-2 text-muted">{{vinilo.artista}}</p>
+          <p class="card-text"><small class="text-muted">${{vinilo.precio}}</small></p>
+        </div>
+      </div>
     </div>
+  </div>

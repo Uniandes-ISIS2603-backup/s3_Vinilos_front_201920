@@ -1,41 +1,48 @@
-<div class="container border">
-  <div class="row">
-    <div class="col">
-      <div class="row m-2">
-        <h3 align="center" style="color: #5dc1b9; white-space: nowrap;">{{viniloDetail.name}}</h3>
-      </div>
-      <div class="row">
-        <img src="{{viniloDetail.imagen}}" style="height: auto; width: auto; max-width: 250px; max-height: 250px; margin-bottom: 20px" class="rounded mx-auto d-block img-thumbnail">
+<div class="row border mt-5 ml-5 mr-5" style="max-width: 950px;">
+  <div class="col">
+    <div class="row m-2">
+      <h3 style="color: black; white-space: nowrap;">{{viniloDetail.name}}</h3>
+    </div>
+    <div class="row">
+      <img src="{{viniloDetail.imagen}}"
+        style="height: auto; width: auto; max-width: 250px; max-height: 250px; margin-bottom: 20px"
+        class="rounded mx-auto d-block img-thumbnail">
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-center">
+          <button class="btn btn-dark mb-3" id="singlebutton">Añadir al Carrito</button>
+        </div>
       </div>
     </div>
-    <div class="col" style="overflow-y: scroll; max-height: 300px;">
-      <br>
-      <br>
-      <h5>Año: </h5> {{viniloDetail.anio}}
-      <h5>Artista: </h5> {{viniloDetail.artista}}
-      <h5>Coleccion: </h5> {{viniloDetail.coleccion}}
-      <h5>Precio: </h5> ${{viniloDetail.precio}}
-      <h5>Descripción: </h5> {{viniloDetail.descripcion}}
-      <h5>Estado: </h5> {{viniloDetail.estado}}
-    </div>
+  </div>
+  <div class="col mw-50" style="overflow-y: scroll; max-height: 300px;">
+    <br>
+    <br>
+    <h5>Año: </h5> {{viniloDetail.anio}}
+    <h5>Artista: </h5> {{viniloDetail.artista}}
+    <h5>Coleccion: </h5> {{viniloDetail.coleccion}}
+    <h5>Precio: </h5> ${{viniloDetail.precio}}
+    <h5>Descripción: </h5> {{viniloDetail.descripcion}}
+    <h5>Estado: </h5> {{viniloDetail.estado}}
   </div>
 </div>
 
-<div class="container">
-  <div>
-    <h1 class="text-center mt-4" style="color: #5dc1b9;">Recomendados</h1>
-  </div>
+<div>
+  <h1 class="text-center mt-4" style="color: black;">Recomendados</h1>
 </div>
 
-<div class="container">
-  <div class="row" *ngFor = "let vinilo of vinilos | slice:0:3">
-    <div class="col" style="cursor: pointer;">
-      <br>
-        <a class="figure-caption" routerLink="/vinilos/{{vinilo.id}}">
-          <h4 align="center" style="color: black">{{vinilo.name}}</h4>
-          <p align="center"><img src="{{vinilo.imagen}}" style="width: 150px; height: 150px"></p>
-          <h5 align="center">${{vinilo.precio}}</h5>
-        </a>
+<div class="row" style="max-width: 950px;">
+  <div class="col-4" *ngFor="let vinilo of vinilos | slice:1:4">
+    <br>
+    <div class="card ml-5" style="width: 12rem;">
+      <a class="figure-caption" routerLink="/vinilos/{{vinilo.id}}">
+        <img class="card-img-top" src="{{vinilo.imagen}}" style="cursor: pointer;"></a>
+      <div class="card-body">
+        <h5 class="card-title">{{vinilo.name}}</h5>
+        <p class="card-subtitle mb-2 text-muted">{{vinilo.artista}}</p>
+        <p class="card-text"><small class="text-muted">${{vinilo.precio}}</small></p>
+      </div>
     </div>
   </div>
 </div>

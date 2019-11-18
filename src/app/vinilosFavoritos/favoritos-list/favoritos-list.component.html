@@ -1,0 +1,14 @@
+  
+    <div class="col-md-2">
+            <table class="table table-striped">
+                <tbody>
+                    <tr *ngFor = "let viniloFavorito of vinilosFavoritos">
+                      <td style="cursor: pointer;">
+                        <a class="figure-caption" routerLink="/vinilos/{{viniloFavorito.id}}">
+                        <p align="center"><img src="{{viniloFavorito.imagen}}" style="width: 150px; height: 150px"></p>
+                        <h3 align="center" style="color: #5dc1b9">{{viniloFavorito.name}}</h3>
+                        </a>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
