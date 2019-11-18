@@ -2,9 +2,9 @@ import { Usuario } from './usuario';
 
 export class UsuarioDetail extends Usuario{
     /**
-   *correo del usuario
+   *nombre del usuario
    */
-  correo: String;
+    nombre: String;
    
   /**
   *fecha de nacimiento del usuario
@@ -26,8 +26,4 @@ export class UsuarioDetail extends Usuario{
   */
    direccion: String;
   
-  /**
-  *contraseña del usuario
-  */
-   contrasena: String;
 }
