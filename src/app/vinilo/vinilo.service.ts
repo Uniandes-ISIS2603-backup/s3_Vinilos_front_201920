@@ -4,7 +4,7 @@ import { Vinilo } from './vinilo';
 import { ViniloDetail } from './vinilo-detail';
 import { Observable } from 'rxjs';
 
-const API_URL = '../../assets/';
+const API_URL = 'http://localhost:8080/s3_vinilos-api/api/vinilos';
 const vinilos = 'vinilos.json';
 
 @Injectable()
