@@ -84,6 +84,7 @@ export class ViniloDetailComponent implements OnInit {
   {
    var obj = {name : this.getViniloDetail.name, image : this.vinilo_name};
    console.log(JSON.stringify(obj));
+   
    localStorage.seetItem('artista2', JSON.stringify(obj) );
 
   }

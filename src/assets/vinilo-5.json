@@ -1,0 +1,13 @@
+{
+    "id": 5,
+    "nombre": "AM",
+    "anio": 2013,
+    "artista": "Artic Monkeys",
+    "coleccion": "Artic Monkeys' Best hits",
+    "precio": 50,
+    "descripcion": "Es el quinto álbum de estudio de la banda inglesa de Indie Rock, Arctic Monkeys. Fue nominado para el 2013 Mercury Prize al mejor álbum, y aparece en el número 449 en la lista de los 500 mejores álbumes de todos los tiempos, según la revista NME. Comercialmente, AM se ha convertido en el álbum más exitoso de Arctic Monkeys hasta la fecha, encabezó las listas en varios países, y llegó a las diez primeras posiciones en muchos más.",
+    "estado": "Nuevo",
+    "disponible": true,
+    "duenio": "codiscos",
+    "imagen": "https://images-na.ssl-images-amazon.com/images/I/71-Y-3usHkL._SX522_.jpg"
+}

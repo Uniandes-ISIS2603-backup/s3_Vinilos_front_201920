@@ -1,14 +1,13 @@
- {
-    "id": 3,
-    "name": "Hybrid Theory",
-    "anio": 2000,
-    "artista": "Linkin Park",
-    "coleccion": "Linkin Park's Best hits",
-    "precio": 25,
-    "descripcion": "Es el álbum debut de la banda estadounidense Linkin Park, publicado por la compañía discográfica Warner Bros. Records el 24 de octubre de 2000. El trabajo fue un éxito comercial tras vender, a fecha de 2019, más de 30 millones de copias a nivel mundial.",
-    "estado": "Nuevo",
-    "disponible": true,
-    "duenio": "codiscos",
-    "imagen": "https://images-na.ssl-images-amazon.com/images/I/91NQO2l3RZL._SX522_.jpg"
-  }
- 
+{
+  "id": 3,
+  "nombre": "Hybrid Theory",
+  "anio": 2000,
+  "artista": "Linkin Park",
+  "coleccion": "Linkin Park's Best hits",
+  "precio": 25,
+  "descripcion": "Es el álbum debut de la banda estadounidense Linkin Park, publicado por la compañía discográfica Warner Bros. Records el 24 de octubre de 2000. El trabajo fue un éxito comercial tras vender, a fecha de 2019, más de 30 millones de copias a nivel mundial.",
+  "estado": "Nuevo",
+  "disponible": true,
+  "duenio": "codiscos",
+  "imagen": "https://images-na.ssl-images-amazon.com/images/I/91NQO2l3RZL._SX522_.jpg"
+}
