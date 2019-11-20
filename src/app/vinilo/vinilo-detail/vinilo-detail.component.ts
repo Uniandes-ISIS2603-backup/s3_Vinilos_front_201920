@@ -6,6 +6,7 @@ import { Vinilo } from '../vinilo';
 import { ViniloDetail } from '../vinilo-detail';
 import { stringify } from 'querystring';
 
+
 @Component({
   selector: 'app-vinilo-detail',
   templateUrl: './vinilo-detail.component.html',
@@ -34,7 +35,6 @@ export class ViniloDetailComponent implements OnInit {
    */
   vinilos: Vinilo[] = [];
 
-  vinilo: Vinilo;
 
   getVinilos(): void {
         this.viniloService.getVinilos().subscribe(vinilos => this.vinilos = vinilos);
@@ -49,6 +49,8 @@ export class ViniloDetailComponent implements OnInit {
   * The editorial's id retrieved from the address
   */
   @Input() vinilo_id: number;
+
+  @Input() vinilo_name: string;
 
   loader: any;
   /**
@@ -80,9 +82,10 @@ export class ViniloDetailComponent implements OnInit {
 
   agregar()
   {
-   var obj = {name : this.vinilo.name, image : this.vinilo.imagen};
+   var obj = {name : this.getViniloDetail.name, image : this.vinilo_name};
+   console.log(JSON.stringify(obj));
+   
    localStorage.seetItem('artista2', JSON.stringify(obj) );
 
   }
-
 }

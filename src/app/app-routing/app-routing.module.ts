@@ -94,7 +94,7 @@ const routes: Routes = [
         path:'vinilosFavoritos',
         children: [{
             path:'list',
-            component:GeneroListComponent
+            component:FavoritosListComponent
         }]
     },
   

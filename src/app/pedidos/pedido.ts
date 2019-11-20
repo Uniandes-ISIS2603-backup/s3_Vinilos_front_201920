@@ -1,3 +1,5 @@
+import { Vinilo } from "app/vinilo/vinilo";
+
 export interface Pedido {
 
   id: number;
@@ -5,20 +7,11 @@ export interface Pedido {
   observacion: string;
   tipo: string;
   fechaGeneracion: Date;
-  viniloCompra:
-  {
-    id: number,
-    nombre: String,
-    anio: number,
-    coleccion: String,
-    precio: number,
-    informacion: String,
-    estado: String,
-    disponible: boolean,
-    duenio: null
-  };
+  viniloCompra:Vinilo;
+ 
   envio:
   {
+    id: number,
     fecha: Date,
     fueEnviado: boolean,
   };
@@ -29,6 +22,5 @@ export interface Pedido {
     cuentaPSE: String,
     montoPagado: number
   }
-
-
+  vinilosIntercambio: Vinilo[];
 }

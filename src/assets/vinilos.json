@@ -1,22 +1,39 @@
 [{
   "id": 1,
-  "name": "21st Century Breakdown",
+  "nombre": "21st Century Breakdown",
   "imagen": "https://m.media-amazon.com/images/I/81dmRIIv-dL._SS500_.jpg",
-  "precio": 30 
+  "precio": 30,
+  "artista": "Green Day"
 }, {
   "id": 2,
-  "name": "American Idiot",
+  "nombre": "American Idiot",
   "imagen": "https://images-na.ssl-images-amazon.com/images/I/61HZsw4F5VL._SX425_.jpg",
-  "precio": 45
+  "precio": 45,
+  "artista": "Green Day"
 }, {
   "id": 3,
-  "name": "Hybrid Theory",
+  "nombre": "Hybrid Theory",
   "imagen": "https://images-na.ssl-images-amazon.com/images/I/91NQO2l3RZL._SX522_.jpg",
-  "precio": 25
+  "precio": 25,
+  "artista": "Linkin Park"
 }, {
   "id": 4,
-  "name": "Cleopatra",
+  "nombre": "Cleopatra",
   "imagen": "https://images-na.ssl-images-amazon.com/images/I/A18mpobgSRL._SX522_.jpg",
-  "precio": 35
+  "precio": 35,
+  "artista": "The Lumineers"
+}, {
+  "id": 5,
+  "nombre": "AM",
+  "imagen": "https://images-na.ssl-images-amazon.com/images/I/71-Y-3usHkL._SX522_.jpg",
+  "precio": 50,
+  "artista": "Artic Monkeys"
+},
+{
+  "id": 6,
+  "nombre": "The 2nd Law",
+  "imagen": "https://images-na.ssl-images-amazon.com/images/I/516CecjrR1L._SY498_BO1,204,203,200_.jpg",
+  "precio": 100,
+  "artista": "Muse"
 }
 ]

@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-5 border-detail offset-2">
+      <ul class=" ">
+        <li class="list-group-item active">{{pedido.tipo}}</li>
+        <div class = "p-3">
+        <li class="list-group-item ">Fecha Generación: {{pedido.fechaGeneracion}}</li>
+
+        <li *ngIf="pedido.tipo==='COMPRA'" class="list-group-item">Vinilo de compra: {{pedido.viniloCompra.nombre}}</li>
+
+        <li *ngIf="pedido.tipo==='INTERCAMBIO'" class="list-group-item">Vinilo(s) intercambio:
+          <ng-template *ngFor="let vinilo of pedido.vinilosIntercambio;index as i">
+            <p> Vinilo (i+1): vinilo.name</p>
+          </ng-template>
+        </li>
+        <li class="list-group-item">Envio:
+          <p> Id: {{pedido.envio.id}} </p>
+          <p> Fecha de envio: {{pedido.envio.fecha}}</p>
+          <p *ngIf="pedido.envio.fueenviado===true"> Ya fue enviado </p>
+          <p *ngIf="pedido.envio.fueenviado===false"> No ha sido enviado </p>
+        </li>
+        <li class="list-group-item">Metodo de pago:
+          <p *ngIf="pedido.metodoPago.pago!=null"> Pago: {{pedido.metodoPago.pago}} </p>
+          <p *ngIf="pedido.metodoPago.numeroTarjeta!=null"> Numero de tarjeta: {{pedido.metodoPago.numeroTarjeta}} </p>
+          <p *ngIf="pedido.metodoPago.cuentaPSE!=null"> Cuenta PSE: {{pedido.metodoPago.cuentaPSE}} </p>
+          <p> Monto pagado: {{pedido.metodoPago.montoPagado}}</p>
+
+        </li>
+      </div>
+      </ul>
+    </div>
+  </div>
+</div>

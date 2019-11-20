@@ -4,7 +4,8 @@ import { NavComponent } from './nav/nav.component';
 import { ListaPedidosCheckComponent } from './lista-pedidos-check/lista-pedidos-check.component';
 import { ListaPedidosRejectedComponent } from './lista-pedidos-rejected/lista-pedidos-rejected.component';
 import { VistaComponent } from './vista/vista.component';
-import { PedidosDetailComponent } from './pedidos-detail/pedidos-detail.component';
+import { PedidosDetailComponent } from './lista-pedidos-check/pedidos-detail/pedidos-detail.component';
+import { PedidosDetailRejectedComponent } from './lista-pedidos-rejected/pedidos-detail-rejected/pedidos-detail-rejected.component';
 
 
 const routes: Routes = [
@@ -13,8 +14,12 @@ const routes: Routes = [
     component: NavComponent,
     children: [
       {
-        path: 'detail/:id',
+        path: 'aceptados/detail/:id',
         component: PedidosDetailComponent
+      },
+      {
+        path: 'rechazados/detail/:id',
+        component: PedidosDetailRejectedComponent
       },
       {
         path: 'aceptados',
