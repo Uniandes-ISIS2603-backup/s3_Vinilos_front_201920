@@ -32,4 +32,16 @@ export class FavoritosListComponent implements OnInit {
   ngOnInit() {
     this.getVinilosFavoritos();
   }
+
+  obtener(): string
+  {
+    let info = localStorage.getItem("2");
+    return info;
+  }
+
+  obtener2(): string
+  {
+    let info = localStorage.getItem("3");
+    return info;
+  }
 }

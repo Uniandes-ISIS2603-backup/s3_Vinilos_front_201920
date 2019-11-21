@@ -80,12 +80,63 @@ export class ViniloDetailComponent implements OnInit {
     this.loader.unsubscribe();
   }
 
-  agregar()
+  agregar(): void
   {
-   var obj = {name : this.getViniloDetail.name, image : this.vinilo_name};
-   console.log(JSON.stringify(obj));
-   
-   localStorage.seetItem('artista2', JSON.stringify(obj) );
+    for(const vinilo of this.vinilos)
+    {
+      if(this.vinilo_id == vinilo.id)
+      {
+        var obj = "{id: " + this.vinilo_id + ", name: " + vinilo.nombre + ", image: " + vinilo.imagen + "}";
+      }
+    }
 
+    localStorage.setItem( ""+this.vinilo_id, JSON.stringify(obj));
+  }
+
+  agregarId(): void
+  {
+    for(const vinilo of this.vinilos)
+    {
+      if(this.vinilo_id == vinilo.id)
+      {
+        var obj = this.vinilo_id;
+      }
+    }
+
+    localStorage.setItem( ""+this.vinilo_id, ""+obj);
+  }
+
+  agregarName(): void
+  {
+    for(const vinilo of this.vinilos)
+    {
+      if(this.vinilo_id == vinilo.id)
+      {
+        var obj =  vinilo.nombre ;
+      }
+    }
+
+    localStorage.setItem( ""+2, ""+obj);
+  }
+
+  
+  agregarImage(): void
+  {
+    for(const vinilo of this.vinilos)
+    {
+      if(this.vinilo_id == vinilo.id)
+      {
+        var obj =  vinilo.imagen;
+      }
+    }
+
+    localStorage.setItem( ""+3, ""+obj);
+  }
+  
+
+  obtener(): string
+  {
+    let info = localStorage.getItem(""+this.vinilo_id);
+    return info;
   }
 }
