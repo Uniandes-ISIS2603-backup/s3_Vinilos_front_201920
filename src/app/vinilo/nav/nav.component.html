@@ -1,0 +1,58 @@
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Vinilos Disponibles </div>
+        <div class="list-group list-group-flush">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Nombre del Vinilo:</span>
+                </div>
+            </div>
+            <input type="text" class="form-control mb-3" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Año:</span>
+                </div>
+            </div>
+            <input type="text" class="form-control mb-3" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Artista:</span>
+                </div>
+            </div>
+            <input type="text" class="form-control mb-3" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Genero</label>
+                </div>
+            </div>
+            <div class="input-group">
+
+                <select id = "filtroGenero" class="custom-select" id="inputGroupSelect01">
+                    <option  selected>Choose...</option>
+                    <option *ngFor="let genero of generos; index as i" [attr.value]=i>{{genero.nombre}}</option>
+                </select>
+            </div>
+            <button id="boton">Filtrar</button>
+        </div>
+    </div>
+
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<!-- /#page-content-wrapper -->
+
+<!-- /#wrapper
+
+ -->
