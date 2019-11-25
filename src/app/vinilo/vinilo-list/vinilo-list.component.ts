@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Vinilo } from '../vinilo';
 import { ViniloService } from '../vinilo.service';
+import { Genero } from 'app/genero/genero';
 
 @Component({
   selector: 'app-vinilo-list',
@@ -20,6 +21,7 @@ export class ViniloListComponent implements OnInit {
    *La lista de vinilos que pertenecen a la tienda
    */
   vinilos: Vinilo[] = [];
+  vinilosFiltro: Vinilo[] = [];
 
   getVinilos(): void {
         this.viniloService.getVinilos().subscribe(vinilos => this.vinilos = vinilos);
@@ -31,5 +33,11 @@ export class ViniloListComponent implements OnInit {
    */
   ngOnInit() {
     this.getVinilos();
+  }
+
+
+  getVinilosGenero(genero: string): void
+  {
+    this.vinilosFiltro = this.vinilos.filter(vinilo=> vinilo.genero.nombre===genero);
   }
 }

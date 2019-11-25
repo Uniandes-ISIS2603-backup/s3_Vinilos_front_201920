@@ -1,3 +1,5 @@
+import { Genero } from "app/genero/genero";
+
 export interface Vinilo {
   /**
   * El id del vinilo
@@ -18,4 +20,6 @@ export interface Vinilo {
   * El artista del vinilo
   */
   artista: string;
+
+  genero: Genero;
 }
