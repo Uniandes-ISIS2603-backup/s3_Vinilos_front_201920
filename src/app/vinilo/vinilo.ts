@@ -1,3 +1,5 @@
+import { Genero } from "app/genero/genero";
+
 export interface Vinilo {
   /**
   * El id del vinilo
@@ -23,4 +25,6 @@ export interface Vinilo {
    * El precio del vinilo
    */
   precio: number;
+  
+  genero: Genero;
 }

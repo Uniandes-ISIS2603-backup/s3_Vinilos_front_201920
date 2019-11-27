@@ -8,5 +8,11 @@
     "name": "American Idiot",
     "image": "https://images-na.ssl-images-amazon.com/images/I/61HZsw4F5VL._SX425_.jpg",
     "precio": 45
+  },
+  {
+    "id": 2,
+    "name": "American Idiot",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61HZsw4F5VL._SX425_.jpg",
+    "precio": 45
   }
   ]

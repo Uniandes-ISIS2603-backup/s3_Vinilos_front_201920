@@ -5,14 +5,15 @@ import { AppRoutingModule } from '../app-routing/app-routing.module';
 
 import { ViniloService } from './vinilo.service';
 import { ViniloDetailComponent } from './vinilo-detail/vinilo-detail.component';
+import { NavComponentVinilo } from './nav/nav.component';
 
 @NgModule({
   imports: [
     CommonModule,
     AppRoutingModule
   ],
-declarations: [ViniloListComponent, ViniloDetailComponent],
-  exports: [ViniloListComponent],
+declarations: [ViniloListComponent, ViniloDetailComponent, NavComponentVinilo],
+  exports: [ViniloListComponent, NavComponentVinilo],
   providers: [ViniloService]
 })
 export class ViniloModule { }

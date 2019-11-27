@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 import { NgxPermissionsGuard } from 'ngx-permissions';
 
 import { AuthLoginComponent } from '../auth/auth-login/auth-login.component';
@@ -18,6 +18,7 @@ import { EnvioDetailComponent } from '../envio/envio-detail/envio-detail.compone
 import { EnvioListComponent } from '../envio/envio-list/envio-list.component';
 import { FavoritosListComponent } from '../vinilosFavoritos/favoritos-list/favoritos-list.component';
 import { Usuario } from 'app/usuarios/usuario';
+import { NavComponentVinilo } from 'app/vinilo/nav/nav.component';
 
 const routes: Routes = [
 
@@ -27,22 +28,22 @@ const routes: Routes = [
             {
                 path: 'login',
                 component: AuthLoginComponent,
-                canActivate: [NgxPermissionsGuard],
-                data: {
-                    permissions: {
-                        only: ['GUEST']
-                    }
-                }
+    //            canActivate: [NgxPermissionsGuard],
+    //            data: {
+    //                permissions: {
+    //                    only: ['GUEST']
+    //                }
+    //            }
             },
             {
-                path: ':sign-up',
+                path: 'sign-up',
                 component: AuthSignUpComponent,
-                canActivate: [NgxPermissionsGuard],
-                data: {
-                    permissions: {
-                        only: ['GUEST']
-                    }
-                }
+   //             canActivate: [NgxPermissionsGuard],
+   //             data: {
+   //                 permissions: {
+   //                     only: ['GUEST']
+   //                 }
+    //            }
             }
         ]
     },
@@ -56,6 +57,7 @@ const routes: Routes = [
     },*/
     {
         path: 'vinilos',
+        component: NavComponentVinilo,
         children: [{
             path: 'list',
             component: ViniloListComponent
@@ -122,8 +124,7 @@ const routes: Routes = [
 ];
 @NgModule({
         imports: [
-            CommonModule,
-            RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })
+            RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules })
         ],
         exports: [RouterModule],
         declarations: []

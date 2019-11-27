@@ -21,7 +21,6 @@ export class AppComponent implements OnInit {
      */
     ngOnInit(): void {
         this.title = "s3_vinilos-Front";
-        this.authService.start();
     }
 
        /**

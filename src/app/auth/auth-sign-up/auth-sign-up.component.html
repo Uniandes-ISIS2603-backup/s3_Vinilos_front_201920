@@ -5,18 +5,32 @@
         <br>
         <form name="sign-up" (ngSubmit)="f.form.valid && signUp()" #f="ngForm" novalidate>
             <div class="form-group">
-                <label for="username"><b>Name</b></label>
-                <input type="text" name="username" class="form-control" id="username" [(ngModel)]="user.name" required>
+                <label for="nombre"><b>Nombre</b></label>
+                <input type="text" name="nombre" class="form-control" id="nombre" [(ngModel)]="usuario.nombre" required>
             </div>
             <div class="form-group">
-                <label for="password"><b>Password</b></label>
-                <input type="text" name="password" class="form-control" id="password" [(ngModel)]="user.password" required>
+                <label for="contrasena"><b>Contraseña</b></label>
+                <input type="text" name="contrasena" class="form-control" id="contrasena" [(ngModel)]="usuario.contrasena" required>
             </div>
             <div class="form-group">
-                <label for="role"><b>Role</b></label>
-                <select class="custom-select" name="role" id="role" [(ngModel)]="user.role" required>
-                    <option [value]="role" *ngFor="let role of roles">{{role}}</option>
-                </select>
+                <label for="celular"><b>Celular</b></label>
+                <input type="tel" name="celular" class="form-control" id="celular" [ngClass]="usuario.celular"/>
+            </div>
+            <div class="form-group">
+                <label for="correo"><b>Correo</b></label>
+                <input type="email" name="correo" class="form-control"  id="correo" [ngClass]="usuario.correo" />
+            </div>
+            <div class="form-group">
+                <label for="fechaNacim"><b>Fecha de Nacimiento</b></label>
+                <input type="date" name="correo" class="form-control" id="fechaNacim" [ngClass]="usuario.fechaNacim" />
+            </div>
+            <div class="form-group">
+                <label for="pais"><b>Pais</b></label>
+                <input type="text" name="pais" class="form-control" id="pais" [ngClass]="usuario.pais" />
+            </div>
+            <div class="form-group">
+                <label for="direccion"><b>Direccion</b></label>
+                <input type="text" name="direccion" class="form-control" id="direccion" [ngClass]="usuario.direccion" />
             </div>
             <div class="justify-content-center align-self-center">
                 <button type="submit" class="btn btn-primary"> Sign Up</button>
