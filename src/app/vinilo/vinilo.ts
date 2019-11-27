@@ -18,4 +18,9 @@ export interface Vinilo {
   * El artista del vinilo
   */
   artista: string;
+
+  /**
+   * El precio del vinilo
+   */
+  precio: number;
 }

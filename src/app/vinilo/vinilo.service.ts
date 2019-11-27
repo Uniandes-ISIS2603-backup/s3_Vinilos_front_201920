@@ -4,7 +4,7 @@ import { Vinilo } from './vinilo';
 import { ViniloDetail } from './vinilo-detail';
 import { Observable } from 'rxjs';
 
-const API_URL = /*'http://localhost:8080/s3_vinilos-api/api/vinilos'*/'../../assets/';
+const API_URL = 'http://localhost:8080/s3_vinilos-api/api/vinilos'/*'../../assets/'*/;
 const vinilos = 'vinilos.json';
 
 @Injectable()
@@ -16,7 +16,10 @@ export class ViniloService {
     */
   constructor(private http: HttpClient) { }
   getVinilos() : Observable<Vinilo[]> {
-        return this.http.get<Vinilo[]>(API_URL + vinilos);
+    let a = this.http.get<Vinilo[]>(API_URL /**+ vinilos*/)
+    /**console.log(a[1].nombre);*/
+    return a;
+        
   }
 
    /**
@@ -24,7 +27,8 @@ export class ViniloService {
     * @returns The vinilo
     */
     getViniloDetail(viniloId): Observable<ViniloDetail> {
-        return this.http.get<ViniloDetail>(API_URL + "vinilo-" + viniloId + ".json");
+        /*return this.http.get<ViniloDetail>(API_URL + "vinilo-" + viniloId + ".json");*/
+        return this.http.get<ViniloDetail>(API_URL + "/" + viniloId);
     }
 
 }
