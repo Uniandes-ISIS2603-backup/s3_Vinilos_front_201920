@@ -51,17 +51,15 @@ const routes: Routes = [
         path: 'home',
         component: AuthLoginComponent
     },
-    /**{
-        path: '**',
-        redirectTo: 'home',
-    },*/
     {
+        path: 'vinilos/list',
+        component: ViniloListComponent
+    },
+    {
+
         path: 'vinilos',
         component: NavComponentVinilo,
-        children: [{
-            path: 'list',
-            component: ViniloListComponent
-        },
+        children: [
         {
             path: ':id',
             component: ViniloDetailComponent
@@ -70,7 +68,8 @@ const routes: Routes = [
     },
     {
         path: 'artista',
-        children: [{
+        children: [
+        {
             path: 'list',
             component: ArtistaListComponent
         },

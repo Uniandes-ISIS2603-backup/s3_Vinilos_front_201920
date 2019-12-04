@@ -6,6 +6,8 @@ export interface Vinilo {
   */
   id: number;
 
+
+  anio:string;
   /**
   * El nombre del vinilo
   */

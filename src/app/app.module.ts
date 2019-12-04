@@ -25,6 +25,7 @@ import { EnvioModule } from "./envio/envio.module";
 import { VinilosFavoritosModule } from "./vinilosFavoritos/vinilosFavoritos.module";
 
 import { UsuarioModule } from "./usuarios/usuario.module";
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 
@@ -33,7 +34,8 @@ import { UsuarioModule } from "./usuarios/usuario.module";
     declarations: [
         AppComponent,
         HomeComponent,
-        PageNotFoundComponent
+        PageNotFoundComponent,
+        WelcomeComponent
     
     ],
     imports: [

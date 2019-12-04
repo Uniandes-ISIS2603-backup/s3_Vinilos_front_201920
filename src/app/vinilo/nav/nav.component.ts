@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GeneroService } from './../../genero/genero.service';
 import { Genero } from 'app/genero/genero';
-import { ViniloListComponent } from "./../../vinilo/vinilo-list/vinilo-list.component";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 
 
@@ -13,29 +13,30 @@ import { ViniloListComponent } from "./../../vinilo/vinilo-list/vinilo-list.comp
 export class NavComponentVinilo implements OnInit {
 
   
-  btnfilter: HTMLElement;
-  generoSelector: HTMLElement;
   generos: Genero[];
+  form: FormGroup;
 
-  constructor(private generoService: GeneroService) {
-    this.generoSelector = document.getElementById("filtroGenero");
-    this.btnfilter= document.getElementById("boton");
 
-    console.log(this.btnfilter);
-    //this.btnfilter.onclick = () => this.filtrar();
+  constructor(
+    private generoService: GeneroService,
+    private formBuilder: FormBuilder,
+    ) {
+      this.buildForm();
    }
 
-  
-  
-
   ngOnInit() {
-    this.generoService.getGenero().subscribe(generos => { this.generos = generos; console.log(this.generos.length) });
+    this.generoService.getGenero().subscribe(generos => { 
+      this.generos = generos; 
+     });
   }
 
-  filtrar() {
-    let text = this.generoSelector["value"];
-    console.log(text);
-
+  private buildForm() {
+    this.form = this.formBuilder.group({
+      nombreVinilo: [''],
+      anio: [''],
+      artista: [''],
+      ganeroFil: [null]
+    });
   }
-
+ 
 }

@@ -4,43 +4,86 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
         <div class="sidebar-heading">Vinilos Disponibles </div>
         <div class="list-group list-group-flush">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Nombre del Vinilo:</span>
+            <form [formGroup]="form" class="form-row" (ngSubmit)="applyFilter()">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Nombre del Vinilo:</span>
+                    </div>
                 </div>
-            </div>
-            <input type="text" class="form-control mb-3" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-default">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Año:</span>
+                <input type="text" class="form-control mb-3" formControlName="nombreVinilo">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Año:</span>
+                    </div>
                 </div>
-            </div>
-            <input type="text" class="form-control mb-3" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-default">
+                <input type="text" class="form-control mb-3" formControlName="anio">
 
-            <div class="input-group ">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Artista:</span>
+                <div class="input-group ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Artista:</span>
+                    </div>
                 </div>
-            </div>
-            <input type="text" class="form-control mb-3" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-default">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Genero</label>
+                <input type="text" class="mb-3 form-control" formControlName="artista">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Genero</label>
+                    </div>
                 </div>
-            </div>
-            <div class="input-group">
 
-                <select id = "filtroGenero" class="custom-select" id="inputGroupSelect01">
-                    <option  selected>Choose...</option>
-                    <option *ngFor="let genero of generos; index as i" [attr.value]=i>{{genero.nombre}}</option>
+                <select id="filtroGenero" class="form-control" formControlName="ganeroFil">
+                    <option [ngValue]="null" disabled>Choose...</option>
+                    <option *ngFor="let genero of generos; index as i" [ngValue]="genero">{{genero.nombre}}</option>
                 </select>
-            </div>
-            <button id="boton">Filtrar</button>
+
+                <button type="submit" class="btn btn-success" id="button-filter">Filtrar</button>
+            </form>
         </div>
     </div>
+    <!-- Original
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Vinilos Disponibles </div>
+        <div class="list-group list-group-flush">
+            <div class="form-row">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Nombre del Vinilo:</span>
+                    </div>
+                </div>
+                <input type="text" class="form-control mb-3" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Año:</span>
+                    </div>
+                </div>
+                <input type="text" class="form-control mb-3" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+
+                <div class="input-group ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Artista:</span>
+                    </div>
+                </div>
+                <input type="text" class="form-control mb-3" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Genero</label>
+                    </div>
+                </div>
+                <div class="input-group">
+
+                    <select id="filtroGenero" class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option *ngFor="let genero of generos; index as i" [attr.value]=i>{{genero.nombre}}</option>
+                    </select>
+                </div>
+                <button type="button" id="button-filter" (click)="applyFilter()">Filtrar</button>
+            </div>
+        </div>
+    </div>
+
+    -->
 
     <!-- /#sidebar-wrapper -->
 
