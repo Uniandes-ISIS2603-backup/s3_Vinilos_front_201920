@@ -97,10 +97,6 @@ export class ViniloListComponent implements OnInit {
     this.vinilos = [...this.vinilosInicial];
   }
 
-  getVinilosGenero(genero: string): void
-  {
-    this.vinilos = this.vinilosInicial.filter(vinilo=> vinilo.genero.nombre===genero);
-  }
-
+ 
 }
 

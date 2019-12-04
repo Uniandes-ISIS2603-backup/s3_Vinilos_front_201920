@@ -4,12 +4,12 @@ export class UsuarioDetail extends Usuario{
     /**
    *nombre del usuario
    */
-    nombre: String;
+    nombre: string;
    
   /**
   *fecha de nacimiento del usuario
   */
-   fechaNacim: Date;
+   fechaNacim: string;
   
   /**
   *numero de celular del usuario
@@ -19,11 +19,11 @@ export class UsuarioDetail extends Usuario{
   /**
   *pais del usuario
   */
-   pais: String;
+   pais: string;
   
   /**
   *direccion del usuario
   */
-   direccion: String;
+   direccion: string;
   
 }

@@ -1,17 +1,13 @@
 export class Usuario{
     
+  
     /**
-     * id del usuario
-     */
-    id: number;
-
-    /**
-    *correo del usuario
+    *correo del usuario en numero ASCCI
     */
-    "correo": string;
+    correo: string;
 
     /**
      * contrasena del usuario
      */
-    "contrasena": string;
+    contraseña: string;
 }
