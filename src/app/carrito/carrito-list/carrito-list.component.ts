@@ -1,28 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-import { CarritoService } from '../carrito.service';
-import { Vinilo } from 'app/vinilo/vinilo';
+import { Component, OnInit } from "@angular/core";
+import { Carrito } from "../carrito";
+import { CarritoService } from "../carrito.service"; // importo la clase y el servicio de la clase
 
+const carritoInfoTbody: HTMLElement = document.getElementById("promedio");
 @Component({
-  selector: 'app-carrito-list',
-  templateUrl: './carrito-list.component.html',
-  styleUrls: ['./carrito-list.component.css']
+  selector: "app-carrito-list",
+  templateUrl: "./carrito-list.component.html",
+  styleUrls: ["./carrito-list.component.css"]
 })
 export class CarritoListComponent implements OnInit {
-
-  constructor(private carrito:CarritoService) { }
-
-  vinilos:Vinilo[];
-
-  getVinilos()
-  {
-    this.carrito.getVinilos().subscribe(vini3 => this.vinilos = vini3);
+  //El componente usa el servicio
+  constructor(private carritoService: CarritoService) {
+    this.carritos=[];
   }
-  deleteVinilo(index): void {
-    this.vinilos.splice(index, 1);
+  carritos: Carrito[];
+  getCarritos(): void {
+    this.carritoService.getCarritos().subscribe(carritos => (this.carritos = carritos));
   }
-
   ngOnInit() {
-    this.getVinilos();
+    // que hace cuando se llama el componente
+    this.getCarritos();
   }
-
+   
 }
