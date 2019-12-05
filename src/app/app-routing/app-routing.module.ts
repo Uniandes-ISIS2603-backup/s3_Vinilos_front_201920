@@ -121,6 +121,7 @@ const routes: Routes = [
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
     ,
     {
@@ -130,6 +131,8 @@ const routes: Routes = [
             component:ArtistaListComponent
         }]
 
+=======
+>>>>>>> parent of 23636b5d... Carrito
 =======
 >>>>>>> parent of 23636b5d... Carrito
 =======

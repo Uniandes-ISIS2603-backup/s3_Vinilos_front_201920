@@ -26,18 +26,7 @@ import { VinilosFavoritosModule } from "./vinilosFavoritos/vinilosFavoritos.modu
 
 import { UsuarioModule } from "./usuarios/usuario.module";
 import { WelcomeComponent } from './welcome/welcome.component';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { CarritoModule } from './Carrito/carrito.module';
-=======
->>>>>>> parent of 23636b5d... Carrito
-=======
->>>>>>> parent of 23636b5d... Carrito
-=======
->>>>>>> parent of 23636b5d... Carrito
-
-
 
 
 @NgModule({
@@ -70,21 +59,8 @@ import { CarritoModule } from './Carrito/carrito.module';
         GeneroModule,
         EnvioModule,
         VinilosFavoritosModule,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         UsuarioModule, 
-        CarritoModule
-=======
-        UsuarioModule
->>>>>>> parent of 23636b5d... Carrito
-=======
-        UsuarioModule
->>>>>>> parent of 23636b5d... Carrito
-=======
-        UsuarioModule
->>>>>>> parent of 23636b5d... Carrito
-    ],
+        CarritoModule],
     bootstrap: [AppComponent],
     providers: [
         {
