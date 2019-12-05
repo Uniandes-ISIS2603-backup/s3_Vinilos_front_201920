@@ -17,6 +17,7 @@ import {ArtistaDetailComponent} from '../artistas/artista-detail/artista-detail.
 import { EnvioDetailComponent } from '../envio/envio-detail/envio-detail.component';
 import { EnvioListComponent } from '../envio/envio-list/envio-list.component';
 import { FavoritosListComponent } from '../vinilosFavoritos/favoritos-list/favoritos-list.component';
+import { CarritoListComponent } from "../Carrito/carrito-list/carrito-list.Component";
 import { Usuario } from 'app/usuarios/usuario';
 import { NavComponentVinilo } from 'app/vinilo/nav/nav.component';
 import { Carrito } from 'app/carrito/carrito';
@@ -125,7 +126,15 @@ const routes: Routes = [
         path: 'carrito',
         component: CarritoListComponent
     }
-   
+    ,
+    {
+        path:'carrito',
+        children: [{
+            path:':list',
+            component:ArtistaListComponent
+        }]
+
+    }
 ];
 @NgModule({
         imports: [

@@ -20,6 +20,6 @@ export class ArtistaService {
 getArtistaDetail(artistaId):Observable<ArtistaDetail>
 {
 return this.http.get<ArtistaDetail>(API+"artista"+artistaId+".json")
-//return this.http.get<ArtistaDetail>(API_URL)
+//return this.http.get<ArtistaDetail>(API_URL+"/"+artistaId)
 }
 }

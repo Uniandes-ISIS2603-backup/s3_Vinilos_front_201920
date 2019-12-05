@@ -57,10 +57,11 @@ export class AuthSignUpComponent implements OnInit {
           
         }
         
-        let fechaTemp :string= this.form.value.fechaNacim +'T00:00:00Z[UTC]';
+        let fechaTemp :string = this.form.value.fechaNacim +'T00:00:00Z[UTC]';
         console.log(fechaTemp);
 
-        let  tempo: UsuarioDetail ={
+        
+        let tempo: UsuarioDetail ={
             nombre : this.form.value.nombre,
             contraseña : this.form.value.contrasena,
             celular: this.form.value.celular,

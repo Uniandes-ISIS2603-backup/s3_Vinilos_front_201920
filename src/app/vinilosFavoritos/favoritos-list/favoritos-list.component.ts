@@ -33,13 +33,28 @@ export class FavoritosListComponent implements OnInit {
     this.getVinilosFavoritos();
   }
 
-  obtener(): string
+  obtenerId(): string
   {
-    let info = localStorage.getItem("2");
-    return info;
+    let info = localStorage.getItem("1");
+    let a = info.split(",");
+    return a[0];
   }
 
-  obtener2(): string
+  obtenerImagen(): string
+  {
+    let info = localStorage.getItem("1");
+    let a = info.split(",");
+    return a[2];
+  }
+
+  obtenerName(): string
+  {
+    let info = localStorage.getItem("1");
+    let a = info.split(",");
+    return a[1];
+  }
+
+  obtener1(): string
   {
     let info = localStorage.getItem("3");
     return info;

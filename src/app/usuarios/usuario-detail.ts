@@ -25,5 +25,7 @@ export class UsuarioDetail extends Usuario{
   *direccion del usuario
   */
    direccion: string;
+
+   contraseña: any;
   
 }

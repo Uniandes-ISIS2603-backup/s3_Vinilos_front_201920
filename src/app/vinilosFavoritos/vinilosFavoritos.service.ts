@@ -18,4 +18,6 @@ export class VinilosFavoritosService {
         return this.http.get<VinilosFavoritos[]>(API_URL + vinilos);
   }
 
+  
+
 }
