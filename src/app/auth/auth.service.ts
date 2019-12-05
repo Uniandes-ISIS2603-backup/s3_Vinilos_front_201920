@@ -3,6 +3,8 @@ import {Router} from '@angular/router';
 import {NgxRolesService, NgxPermissionsService} from 'ngx-permissions'
 import 'rxjs/add/operator/catch';
 
+const usuarios = '../../assets/usuarios.json';
+
 /**
  * The service provider for everything related to authentication
  */
@@ -25,8 +27,17 @@ export class AuthService {
      * Logs the user in with the desired role
      * @param role The desired role to set to the user
      */
-    login (): void {
-        this.router.navigateByUrl('/');
+    login (correo: String, contrasena: String): void {
+        var i = 0;
+        for (i = 0; i < usuarios.length; i++){
+            var pCorreo = usuarios[i]['correo'];
+            var pContra = usuarios[i]['correo'];
+            if(pCorreo == correo && pContra == contrasena){
+                this.router.navigateByUrl('/usuario/i');
+            }
+        }
+        
+        
     }
 
     /**

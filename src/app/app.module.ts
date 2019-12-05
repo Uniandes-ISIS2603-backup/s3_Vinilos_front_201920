@@ -26,11 +26,9 @@ import { VinilosFavoritosModule } from "./vinilosFavoritos/vinilosFavoritos.modu
 
 import { UsuarioModule } from "./usuarios/usuario.module";
 import { WelcomeComponent } from './welcome/welcome.component';
-<<<<<<< HEAD
+
 import { CarritoModule } from './carrito/carrito.module';
-=======
-import { CarritoModule } from './Carrito/carrito.module';
->>>>>>> c48c11f67146ea50cacc929439c0e140de0feb6a
+
 
 
 
@@ -65,12 +63,8 @@ import { CarritoModule } from './Carrito/carrito.module';
         GeneroModule,
         EnvioModule,
         VinilosFavoritosModule,
-<<<<<<< HEAD
         UsuarioModule,
-=======
-        UsuarioModule, 
->>>>>>> c48c11f67146ea50cacc929439c0e140de0feb6a
-        CarritoModule
+
     ],
     bootstrap: [AppComponent],
     providers: [

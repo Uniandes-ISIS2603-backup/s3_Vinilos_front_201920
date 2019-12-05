@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { AuthService } from './auth/auth.service';
+import { Usuario } from './usuarios/usuario';
 
 /**
  * The app component. This component is the base of s3_vinilos-Front
@@ -27,6 +28,10 @@ export class AppComponent implements OnInit {
      * @ignore
      */
     constructor(private authService: AuthService) { }
+    usuario: Usuario;
+    login(idUsuario: number): void {
+this.authService.login()
+    }
 
     logout(): void {
         this.authService.logout()
