@@ -20,8 +20,6 @@ import { FavoritosListComponent } from '../vinilosFavoritos/favoritos-list/favor
 import { CarritoListComponent } from "../Carrito/carrito-list/carrito-list.Component";
 import { Usuario } from 'app/usuarios/usuario';
 import { NavComponentVinilo } from 'app/vinilo/nav/nav.component';
-import { Carrito } from 'app/carrito/carrito';
-import { CarritoListComponent } from 'app/carrito/carrito-list/carrito-list.component';
 
 const routes: Routes = [
 
@@ -121,10 +119,6 @@ const routes: Routes = [
             component:UsuarioDetailComponent
         }]
 
-    },
-    {
-        path: 'carrito',
-        component: CarritoListComponent
     }
     ,
     {

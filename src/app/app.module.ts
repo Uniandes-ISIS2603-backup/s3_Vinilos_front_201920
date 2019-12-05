@@ -26,7 +26,10 @@ import { VinilosFavoritosModule } from "./vinilosFavoritos/vinilosFavoritos.modu
 
 import { UsuarioModule } from "./usuarios/usuario.module";
 import { WelcomeComponent } from './welcome/welcome.component';
+<<<<<<< HEAD
 import { CarritoModule } from './Carrito/carrito.module';
+=======
+>>>>>>> parent of 23636b5d... Carrito
 
 
 
@@ -61,8 +64,12 @@ import { CarritoModule } from './Carrito/carrito.module';
         GeneroModule,
         EnvioModule,
         VinilosFavoritosModule,
+<<<<<<< HEAD
         UsuarioModule, 
         CarritoModule
+=======
+        UsuarioModule
+>>>>>>> parent of 23636b5d... Carrito
     ],
     bootstrap: [AppComponent],
     providers: [
