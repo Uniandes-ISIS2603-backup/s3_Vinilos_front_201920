@@ -28,8 +28,8 @@ export class AuthLoginComponent implements OnInit {
     /**
     * Logs the user in with the selected role
     */
-    login(): void {
-        this.authService.login();
+    login(usuario: Usuario): void {
+        this.authService.login(usuario.correo, usuario.contraseña);
         this.toastrService.success('Logged in')
     }
 

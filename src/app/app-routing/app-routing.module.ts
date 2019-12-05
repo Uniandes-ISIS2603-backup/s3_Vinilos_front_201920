@@ -20,7 +20,12 @@ import { FavoritosListComponent } from '../vinilosFavoritos/favoritos-list/favor
 import { CarritoListComponent } from "../Carrito/carrito-list/carrito-list.Component";
 import { Usuario } from 'app/usuarios/usuario';
 import { NavComponentVinilo } from 'app/vinilo/nav/nav.component';
+<<<<<<< HEAD
 import { ViniloCreateComponent } from 'app/vinilo/vinilo-create/vinilo-create.component';
+=======
+import { Carrito } from 'app/carrito/carrito';
+
+>>>>>>> cf5dddd4d3a1b76594940bf1bf8d943d91a29f47
 
 const routes: Routes = [
 
@@ -120,14 +125,20 @@ const routes: Routes = [
             component:UsuarioDetailComponent
         }]
 
-    }
-    ,
+
+    },
+    
+
+    
+    
+
     {
         path:'carrito',
         children: [{
             path:':list',
             component:ArtistaListComponent
         }]
+
 
     }
     {
