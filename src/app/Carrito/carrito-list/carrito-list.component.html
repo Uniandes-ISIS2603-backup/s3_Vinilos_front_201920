@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">   
+			<thead class="thead-dark">
+					<tr>
+					  <th>Items</th>
+					</tr>
+			</thead>   
+		<div class="col mt-5 ml-5" *ngFor = "let artista of artistas">
+		<div class="card" style="width: 18rem;">
+		<a routerLink="/artista/{{artista.id}};">
+			<img src={{artista.rutaFoto}} class="card-img-top"> 	
+		</a>		
+			<div class="card-body">
+				<h5 class="card-title" style="color: #5dc1b9" routerLink="/artista/{{artista.id}};">{{artista.name}}</h5>
+			</div>
+		</div>
+	</div>
+</div>

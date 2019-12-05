@@ -86,12 +86,14 @@ export class ViniloDetailComponent implements OnInit {
     {
       if(this.vinilo_id == vinilo.id)
       {
-        var obj = "{id: " + this.vinilo_id + ", name: " + vinilo.nombre + ", image: " + vinilo.imagen + "}";
+        var obj =  this.vinilo_id + "," + vinilo.nombre + ", " + vinilo.imagen;
       }
     }
 
-    localStorage.setItem( ""+this.vinilo_id, JSON.stringify(obj));
+    localStorage.setItem( ""+this.vinilo_id, ""+obj);
+    
   }
+
 
   agregarId(): void
   {
