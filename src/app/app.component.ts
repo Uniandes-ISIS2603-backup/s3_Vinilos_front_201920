@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     constructor(private authService: AuthService) { }
     usuario: Usuario;
     login(idUsuario: number): void {
-this.authService.login()
+
     }
 
     logout(): void {

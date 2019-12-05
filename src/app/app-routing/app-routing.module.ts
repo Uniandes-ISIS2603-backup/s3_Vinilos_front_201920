@@ -22,6 +22,7 @@ import { Usuario } from 'app/usuarios/usuario';
 import { NavComponentVinilo } from 'app/vinilo/nav/nav.component';
 import { Carrito } from 'app/carrito/carrito';
 
+
 const routes: Routes = [
 
     {
@@ -120,14 +121,20 @@ const routes: Routes = [
             component:UsuarioDetailComponent
         }]
 
+
     },
     
+
+    
+    
+
     {
         path:'carrito',
         children: [{
             path:':list',
             component:ArtistaListComponent
         }]
+
 
     }
 ];
