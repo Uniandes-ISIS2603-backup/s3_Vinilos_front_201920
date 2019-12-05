@@ -19,6 +19,8 @@ import { EnvioListComponent } from '../envio/envio-list/envio-list.component';
 import { FavoritosListComponent } from '../vinilosFavoritos/favoritos-list/favoritos-list.component';
 import { Usuario } from 'app/usuarios/usuario';
 import { NavComponentVinilo } from 'app/vinilo/nav/nav.component';
+import { Carrito } from 'app/carrito/carrito';
+import { CarritoListComponent } from 'app/carrito/carrito-list/carrito-list.component';
 
 const routes: Routes = [
 
@@ -118,6 +120,10 @@ const routes: Routes = [
             component:UsuarioDetailComponent
         }]
 
+    },
+    {
+        path: 'carrito',
+        component: CarritoListComponent
     }
    
 ];
