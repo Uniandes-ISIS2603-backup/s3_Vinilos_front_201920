@@ -7,7 +7,7 @@ import { Observable } from "rxjs";
 
 const API_URL = "http://localhost:8080/s3_vinilos-api/api/artistas";
 const API = "../../assets/";
-const artistas = "artistas.json";
+const artistas = "artista";
 
 @Injectable()
 export class ArtistaService {
@@ -19,7 +19,7 @@ export class ArtistaService {
   }
 getArtistaDetail(artistaId):Observable<ArtistaDetail>
 {
-return this.http.get<ArtistaDetail>(API_URL+'/'+artistaId)
-//return this.http.get<ArtistaDetail>(API_URL+"/"+artistaId)
+//return this.http.get<ArtistaDetail>(API_URL+"artista"+artistaId+".json")
+return this.http.get<ArtistaDetail>(`${API_URL}/${artistaId}`)
 }
 }
