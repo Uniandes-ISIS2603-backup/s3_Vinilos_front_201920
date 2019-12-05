@@ -28,7 +28,10 @@ import { UsuarioModule } from "./usuarios/usuario.module";
 import { WelcomeComponent } from './welcome/welcome.component';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { CarritoModule } from './Carrito/carrito.module';
+=======
+>>>>>>> parent of 23636b5d... Carrito
 =======
 >>>>>>> parent of 23636b5d... Carrito
 =======
@@ -69,8 +72,12 @@ import { CarritoModule } from './Carrito/carrito.module';
         VinilosFavoritosModule,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         UsuarioModule, 
         CarritoModule
+=======
+        UsuarioModule
+>>>>>>> parent of 23636b5d... Carrito
 =======
         UsuarioModule
 >>>>>>> parent of 23636b5d... Carrito
