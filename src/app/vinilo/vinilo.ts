@@ -1,13 +1,16 @@
 import { Genero } from "app/genero/genero";
+import {Artista} from "app/artistas/artista"
 
-export interface Vinilo {
+export class Vinilo {
   /**
   * El id del vinilo
   */
   id: number;
 
-
-  anio:string;
+/**
+  * El año del vinilo
+  */
+ anio: number;
   /**
   * El nombre del vinilo
   */
@@ -21,7 +24,7 @@ export interface Vinilo {
   /**
   * El artista del vinilo
   */
-  artista: string;
+  artista: Artista;
 
   /**
    * El precio del vinilo

@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col-6 offset-3">
+    <br>
+    <h2 class="text-center">CREAR UN VINILO PARA VENDER</h2>
+    <br>
+    <form name="createVinilo" (ngSubmit)=" createVinilo()" [formGroup]="form">
+      <div class="form-group">
+        <label for="nombre"><b>Nombre</b></label>
+        <input type="text" class="form-control" formControlName="nombre" id="nombre">
+      </div>
+      <div class="form-group">
+        <label for="anio"><b>Año de salida</b></label>
+        <input type="number" name="anio" class="form-control" formControlName="anio">
+      </div>
+      <div class="form-group">
+        <label for="coleccion"><b>Coleccion a la que pertenece</b></label>
+        <input type="text" name="coleccion" class="form-control" formControlName="coleccion" />
+      </div>
+      <div class="form-group">
+        <label for="informacion"><b>Informacion del Vinilo</b></label>
+        <input type="text" name="informacion" class="form-control" formControlName="informacion" />
+      </div>
+      <div class="form-group">
+        <label for="estado"><b>Estado del vinilo</b></label>
+        <input type="text" name="estado" class="form-control" formControlName="estado" />
+      </div>
+      <div class="form-group">
+        <label for="imagen"><b>Introduzca la Url de la imagen del vinilo</b></label>
+        <input type="imagen" name="imagen" class="form-control" formControlName="imagen" />
+      </div>
+      <div class="form-group">
+          <label for="precio"><b>Precio</b></label>
+          <input type="precio" name="precio" class="form-control" formControlName="precio" />
+        </div>
+      <label for="artista"><b>Artista</b></label>
+      <select id="artista" class="form-control mb-3" formControlName="artista">
+        <option [ngValue]="null" disabled>Choose...</option>
+        <option *ngFor="let artista of artistas; index as i" [ngValue]="artista">{{artista.name}}</option>
+      </select>
+
+      <label for="genero"><b>Genero</b></label>
+      <select id="genero" class="form-control mb-3" formControlName="genero">
+        <option [ngValue]="null" disabled>Choose...</option>
+        <option *ngFor="let genero of generos; index as i" [ngValue]="genero">{{genero.nombre}}</option>
+      </select>
+
+      <div class="justify-content-center align-self-center">
+        <button type="submit" class="btn btn-primary"> Crear Vinilo</button>
+      </div>
+
+
+    </form>
+  </div>
+</div>

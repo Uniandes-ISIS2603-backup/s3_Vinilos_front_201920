@@ -20,6 +20,7 @@ import { FavoritosListComponent } from '../vinilosFavoritos/favoritos-list/favor
 import { CarritoListComponent } from "../Carrito/carrito-list/carrito-list.Component";
 import { Usuario } from 'app/usuarios/usuario';
 import { NavComponentVinilo } from 'app/vinilo/nav/nav.component';
+import { ViniloCreateComponent } from 'app/vinilo/vinilo-create/vinilo-create.component';
 
 const routes: Routes = [
 
@@ -128,6 +129,10 @@ const routes: Routes = [
             component:ArtistaListComponent
         }]
 
+    }
+    {
+        path:'vinilo/vinilo-create',
+        component: ViniloCreateComponent
     }
 ];
 @NgModule({

@@ -7,6 +7,7 @@ import { ViniloService } from './vinilo.service';
 import { ViniloDetailComponent } from './vinilo-detail/vinilo-detail.component';
 import { NavComponentVinilo } from './nav/nav.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ViniloCreateComponent } from './vinilo-create/vinilo-create.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-declarations: [ViniloListComponent, ViniloDetailComponent, NavComponentVinilo],
+declarations: [ViniloListComponent, ViniloDetailComponent, NavComponentVinilo, ViniloCreateComponent],
   exports: [ViniloListComponent, NavComponentVinilo],
   providers: [ViniloService]
 })

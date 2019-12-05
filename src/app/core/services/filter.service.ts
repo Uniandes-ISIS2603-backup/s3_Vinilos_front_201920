@@ -35,7 +35,7 @@ export class FilterService {
       this.vinilos = this.vinilos.filter(result => result.anio === form.value.anio);
     }
     if (form.value.artista != '') {
-      this.vinilos = this.vinilos.filter(result => result.artista.toLowerCase === form.value.artista.toLowerCase);
+      this.vinilos = this.vinilos.filter(result => result.artista.name.toLowerCase === form.value.artista.toLowerCase);
     }
     if (form.value.ganeroFil != null) {
       this.vinilos = this.vinilos.filter(result => result.genero.nombre.toLowerCase === form.value.ganeroFil.nombre.toLowerCase);

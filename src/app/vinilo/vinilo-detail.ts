@@ -1,10 +1,6 @@
 import {Vinilo} from "./vinilo";
 
-export class ViniloDetail {
-  /**
-  * El año del vinilo
-  */
-  anio: number;
+export class ViniloDetail extends Vinilo {
 
   /**
   * La colecccion del vinilo
@@ -12,14 +8,9 @@ export class ViniloDetail {
   coleccion: string;
 
   /**
-  * El precio del vinilo
-  */
-  precio: number;
-
-  /**
   * La informacion del vinilo
   */
-  descripcion: string;
+  informacion: string;
 
   /**
   * El estado del vinilo

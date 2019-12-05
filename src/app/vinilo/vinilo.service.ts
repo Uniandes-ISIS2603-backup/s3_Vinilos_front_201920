@@ -31,4 +31,10 @@ export class ViniloService {
         return this.http.get<ViniloDetail>(API_URL + "/" + viniloId);
     }
 
+    postVinilo(vinilo: ViniloDetail)
+    {
+      console.log(`${API_URL}`,vinilo);
+      return this.http.post(API_URL,vinilo);
+    }
+
 }

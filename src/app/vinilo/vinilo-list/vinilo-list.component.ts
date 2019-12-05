@@ -81,7 +81,7 @@ export class ViniloListComponent implements OnInit {
     }
     if(form.value.artista!='')
     {
-      this.vinilos = this.vinilos.filter( result => result.artista.toLowerCase=== form.value.artista.toLowerCase);
+      this.vinilos = this.vinilos.filter( result => result.artista.name.toLowerCase=== form.value.artista.toLowerCase);
     }
     /** 
      * Los vinilos no tienen genero en el back
