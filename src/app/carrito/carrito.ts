@@ -1,7 +1,7 @@
-import { Vinilo } from "app/vinilo/vinilo";
-
 export class Carrito {
-    nombre:string;
-    imagen:string;
-    
+  
+  id:number;
+  name:string;
+  image:string;
+  costo:number;
 }

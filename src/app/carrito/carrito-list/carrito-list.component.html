@@ -1,25 +1,18 @@
-<div class="container-fluid">
-  <div class="col">
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <tr>
-          <th>Nombre vinilos</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor = "let v of vinilos; let i = index; ">
-            <td style ="cursor: pointer;">
-               <div class="row">
-                  <p>{{v.nombre}}</p>
-                  <td style="text-align: right;width:220px">
-                <button class="btn btn-danger" (click)="deleteVinilo(i)" >X</button>
-                  </td>
-                 
-               </div>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-  </div>
-  <button type="button" class="btn btn-dark" routerLink="../pedidos">confirmar pedido</button>
+<div class="container">
+	<div class="row">   
+			<thead class="thead-dark">
+					<tr>
+					  <th>Items</th>
+					</tr>
+			</thead>   
+		<div class="col mt-5 ml-5" *ngFor = "let artista of artistas">
+		<div class="card" style="width: 18rem;">
+		<a routerLink="/artista/{{artista.id}};">
+			<img src={{artista.rutaFoto}} class="card-img-top"> 	
+		</a>		
+			<div class="card-body">
+				<h5 class="card-title" style="color: #5dc1b9" routerLink="/artista/{{artista.id}};">{{artista.name}}</h5>
+			</div>
+		</div>
+	</div>
 </div>

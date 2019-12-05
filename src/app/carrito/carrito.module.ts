@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
+import {AppRoutingModule} from '../app-routing/app-routing.module';
 import { CommonModule } from '@angular/common';
-
-import { CarritoListComponent } from './carrito-list/carrito-list.component';
-import { AppRoutingModule } from 'app/app-routing/app-routing.module';
 import { CarritoService } from './carrito.service';
+import { CarritoListComponent } from "./carrito-list/carrito-list.component";
+
 
 @NgModule({
   imports: [
-    CommonModule, AppRoutingModule
+    CommonModule,AppRoutingModule
   ],
-  declarations: [CarritoListComponent],
+  declarations: [CarritoListComponent,],
   exports:[CarritoListComponent],
-  providers:[CarritoService]
+  providers: [CarritoService]
 })
 export class CarritoModule { }
