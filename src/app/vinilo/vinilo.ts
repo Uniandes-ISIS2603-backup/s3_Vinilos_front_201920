@@ -29,4 +29,6 @@ export interface Vinilo {
   precio: number;
   
   genero: Genero;
+
+  
 }

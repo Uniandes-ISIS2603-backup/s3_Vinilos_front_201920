@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="col">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Nombre vinilos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let v of vinilos; let i = index; ">
+            <td style ="cursor: pointer;">
+               <div class="row">
+                  <p>{{v.nombre}}</p>
+                  <td style="text-align: right;width:220px">
+                <button class="btn btn-danger" (click)="deleteVinilo(i)" >X</button>
+                  </td>
+                 
+               </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <button type="button" class="btn btn-dark" routerLink="../pedidos">confirmar pedido</button>
+</div>
