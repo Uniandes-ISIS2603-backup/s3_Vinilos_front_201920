@@ -119,6 +119,7 @@ const routes: Routes = [
             component:UsuarioDetailComponent
         }]
 
+<<<<<<< HEAD
     }
     ,
     {
@@ -128,6 +129,8 @@ const routes: Routes = [
             component:ArtistaListComponent
         }]
 
+=======
+>>>>>>> parent of 23636b5d... Carrito
     }
 ];
 @NgModule({
